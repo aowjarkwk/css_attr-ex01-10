@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>박스모델 - 공간배치(레이아웃)</title>
+    <!-- 개발자모드 F12 -->
+    <!-- 4가지 공간 -->
+    <!-- margin : 다른 요소(tag)와의 간격(테두리선<->테두리선)-->
+    <!-- border : 테두리선의 굵기 -->
+    <!-- padding : 테두리선 안쪽에서 내용물과의 간격-->
+    <!-- content : 내용물(텍스트,이미지, 다른 태그 요소)-->
+    <style>
+        body{
+            /* body의 기본 설정은 margin 8px로 설정됨. */
+            margin:0;
+        }
+        div{
+            width:100px;
+            height:100px;
+            background-color: blue;
+
+            border: 20px solid black;
+            padding: 30px;
+            margin:10px;
+        }
+        span{
+            color:red;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- div:빈 포장박스 - 넓이(한줄), 높이(없음) -->
+    <div><span>박스</span></div>
+</body>
+</html>

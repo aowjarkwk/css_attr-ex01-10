@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>float 속성</title>
+    <style>
+        /* float: 흘러다닌다. 유동적 - 변화를 약간 예측하기 어렵다.*/
+        /* float 속성 : inline속성으로 변경하고,왼쪽이나 오른쪽으로 붙힌다 */
+        /*            : 계속해서 아래쪽태그에 영향을 미친다. */
+        body *{
+            border:1px solid red;
+        }
+        div {
+            display: block;
+            width:100px;
+            height:50px;
+            background-color: orange;
+            border:2px solid black;
+
+            /* float속성을 쓸때 주의점. */
+            /* 1. overflow: hidden을 사용할 것 */
+            /* 2. width를 잘 넘치지않게 지정 */
+            /* 3.clear를 사용하여 속성제거 필요 */
+
+            /* 콘텐츠가 자기영역을 넘어가면 
+            줄바꿈이나 늘려지지않고 컨텐츠를 자른다. */
+            overflow: hidden;
+        }
+        #box1,#box3,#box5{
+            background-color: blue;
+        }
+        #box1{
+            float:left;
+        }
+        #box2{
+            float: left;
+        }
+        #box3{
+            clear:both;
+            float:left;
+        }
+        #box4{
+            float:left;
+        }
+        #box5{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+</body>
+</html>

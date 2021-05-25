@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>연습문제1</title>
+    <style>
+        /* html 기본디자인의 마진,패딩을 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            overflow: hidden;
+            border: 1px solid red;
+        }
+
+        #wrap {
+            /* PC 모니터의 기본해상도 : 1024*768 */
+            width: 960px;
+        }
+
+        #header {
+            height: 100px;
+            text-align: center;
+            /* 수직 중앙 정렬하기 위해 */
+            vertical-align: middle;
+            /* height와 동일한 값 */
+            line-height: 100px;
+            background-color: aqua;
+        }
+        
+        #aside{
+            background-color: greenyellow;
+            float:left;
+            width:200px;
+            height:300px;
+            line-height:300px;
+            text-align: center;
+        }
+        #section{
+            float:left;
+            width:750px;
+            margin-top:0;
+            display: inline-block;
+            height:300px;
+            
+            text-align: center;
+            
+        }
+        #footer{
+            height: 100px;
+            text-align: center;
+            clear: both;
+            vertical-align:middle;
+            padding-top: 50px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">홈 회사소개 포트폴리오 자주하는질문 고객센터</div>
+        <div id="aside">고객지원 5555-8888</div>
+        <div id="section">
+            <br>
+            <img src="./work_office.jpg" alt="사무실" width="300px"height="200px">
+            <br>
+            <br>
+            <p>효율적인 업무 시스템</p>
+        </div>
+        <div id="footer">
+            <p>홍길동 주식회사 1234-1234 <br> 서울시 강남구 강남동 100번지</p>
+        </div>
+    </div>
+</body>
+
+</html>

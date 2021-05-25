@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>컬러 Color 속성</title>
+    <style>
+        h1{
+            /* red는 예약어 : 64개 정도*/
+            background-color: red;
+        }
+        h2{
+            /* 빛의 삼원색 : Red,Green,Blue 거의 모든 색 구현*/
+            /* #RRGGBB 16진수 값 표현*/
+            /*  Red : 0~255까지의 값,16진수로는 00~FF,2의 8승 */
+            /*  Green : 0~255까지의 값,16진수로는 00~FF,2의 8승 */
+            /*  Blue : 0~255까지의 값,16진수로는 00~FF,2의 8승 */
+            /* 10진수 : 0,1,2,3....9,10,11,12,13,14,15,16 */
+            /* 16진수:  0,1,2,3....9,a, b, c, d, e, f, 10 */
+            background-color: #76CF15;
+        }
+        h3{
+            /* rgb함수 */
+            /*                red:0~255 green:0~255 blue:0~255*/
+            background-color: rgb(255,0,0);
+        }
+        h4{
+            /* rgba함수 (rgb + alpha)*/
+            /* alpha : 투명도 0.0~1.0까지의 값, 1.0불투명*/
+            /* 0:투명 1:불투명 */
+            background-color: rgba(18, 85, 173, 0.637);
+        }
+        h5{
+            /* hsl함수 */
+            /* 색상,채도,명도 로 색상정의:전문가용도*/
+            background-color: hsl(18, 82%, 42%);
+        }
+        h6{
+            /* hsla함수 : 투명도 추가 */
+            background-color: hsla(0,80%,50%,0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>동해물과 백두산이</h1>
+    <h2>동해물과 백두산이</h2>
+    <h3>동해물과 백두산이</h3>
+    <h4>동해물과 백두산이</h4>
+    <h5>동해물과 백두산이</h5>
+    <h6>동해물과 백두산이</h6>
+</body>
+</html>

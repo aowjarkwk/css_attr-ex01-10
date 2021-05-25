@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>공간분할태그 - display속성</title>
+    <!-- Display 속성 -->
+    <!-- none : 안보이게 함, 공간이 함께 사라짐 -->
+    <!-- block : div기본속성, 한 줄 차지 -->
+    <!-- inline : span기본속성, 한 줄 안에서 자기 너비만, 세로 높이 확보 못함 -->
+    <!-- inline-block : 한 줄 안에서 세로/가로 너비 차지-->
+
+    <!-- display: none; 안보이게 - 공간도 사라짐. -->
+    <!-- visibility: hidden; 안보이게 - 공간은 차지함. -->
+
+    <!-- CSS Display -->
+    <!-- block 속성태그 : div, h1~6, p, hr, ol, ul, li, table, form -->
+    <!-- inline 속성태그 : span, a, input, text(b,ins,sub), img  -->
+    <style>
+        body * {
+            border: 1px solid red;
+        }
+
+        #box {
+            /* display: none; */
+            /* display:block; */
+            /* display: inline; */
+            display: inline-block;
+            width:180px;
+            height:180px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>Dummy</span>
+    <div id="box">
+        <span>스팬 더미 문구입니다.</span>
+    </div>
+
+    <span>Dummy</span>
+</body>
+
+</html>

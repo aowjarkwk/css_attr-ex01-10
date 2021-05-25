@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>visibility 속성</title>
+    <!-- display: none 안보이게 공간도 사라짐. -->
+    <!-- visibility : hidden 안보이게 공간은 남음. -->
+    <style>
+        body *{
+            border:1px solid red;
+        }
+        #box{
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <span>Dummy</span>
+    <div id="box">
+        <span>스팬 더미 문구입니다.</span>
+    </div>
+    <span>Dummy</span>
+</body>
+
+</html>
